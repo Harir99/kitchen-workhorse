@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Kitchen Workhorse </title>
+        <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="theme-color" content="#e6e1dd"/>
+   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" async>
+   <link href="//cdn.jsdelivr.net/sweetalert2/5.3.8/sweetalert2.min.css" rel="stylesheet"/>
+    <style>
+        header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+            input[type=text] {
+          width: 130px;
+          box-sizing: border-box;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white;
+          background-image: url('searchicon.png');
+          background-position: 10px 10px;
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 40px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:focus {
+          width: 100%;
+        }
+        pre {
+            font-family: "Times New Roman", Times, serif;
+        }
+        body {
+            background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg");
+            font-family: "Times New Roman", Times, serif;
+
+            }
+      * {box-sizing: border-box;}
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+
+      }
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      /* Three image containers (use 25% for four, and 50% for two, etc) */
+      .column {
+        /* float: left; */
+        width: 25%;
+        min-height: 100px;
+        /* float: left;  */
+
+
+      }
+
+
+      img {
+       width: 320px;
+       height:160px;
+       float: center;
+      }
+/* side navigatior ( vertical) css */
+        #container { width: 400}
+        #mySidenav a {
+          position: absolute;
+          left: 120px;
+          transition: 0.3s;
+          text-decoration: none;
+          font-size: 20px;
+          background-color: #484243; /* Green background */
+          border: 1px solid white; /* Green border */
+          color: white; /* White text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          width: 8%; /* Set a width if needed */
+          display: block; /* Make the buttons appear below each other */
+          height: 4.5%;
+        }
+
+        #mySidenav a:hover {
+          left: 50px;
+          background-color: #E4B34C;
+
+        }
+
+
+        #one {
+          top: 530px;
+          background-color:#E4B34C;
+        }
+
+        #two {
+          top: 575px;
+          background-color: #E4B34C;
+        }
+
+        #three{
+          top: 620px;
+          background-color: #E4B34C;
+        }
+        #four {
+          top: 665px;
+          background-color: #E4B34C;
+        }
+
+        /* Page title and text css */
+        .jumbotron {
+            position: relative;
+         /* padding: 4.3rem 0;  */
+            margin: 0;
+            border-radius: 0;
+            color: #E4B34C;
+            font-weight: bold;
+        }
+
+        .jumbotron, .jumbotron.jumbotron-pro, .theme-pro .jumbotron {
+            background-color: #E4B34C;
+        }
+        .icon-panel.icon-panel-cente#E4B34C, .icon-panels.icon-panels-cente#E4B34C .icon-panel-title, .jumbotron {
+            text-align: center;
+
+        }
+
+        article, aside, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
+            display: block;
+
+
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+
+
+        }
+        article, aside, figcaption, figure, footer, header, hgroup, legend, main, nav, section {
+            display: block;
+
+        }
+
+        *, ::after, ::before {
+            box-sizing: border-box;
+
+
+        }
+        footer{
+            font-size: 100%;
+            color: #575756;
+            text-align: center;
+        }
+         .tabcontent {
+            position: relative;
+            float: left;
+            width: 1900px;
+            height: 423pxpx;
+            background-position: 50% 50%;
+            background-repeat:   no-repeat;
+            background-size:     cover;
+        }
+
+
+    </style>
+    </head>
+    <body>
+        
+            <!-- side navbar buttons s -->
+      <div id="mySidenav" class="sidenav" >
+          <div class="btn-group" role="group" aria-label="Basic example">
+
+      <button type="button" class="btn btn-purple btn-rounded">  <a href="#History" id="one" > History </a></button>
+       <button type="button" class="btn btn-purple btn-rounded"> <a href="#Uses" id="two" >Uses</a></button>
+      <button type="button" class="btn btn-purple btn-rounded"> <a href="#Tools" id="three" >Tools Used</a></button>
+      <button type="button" class="btn btn-purple btn-rounded"> <a href="#Learn" id="four" >Learn </a></button>
+
+  </div>
+
+    </div>
+
+
+<section class="jumbotron js-handle-banner js-id-29628" style="">
+    <img src="https://spooncarverheaven.com/wp-content/uploads/2018/08/cropped-ec458445-9fbb-4b2b-9b8f-9fb08cde2419-2015-0712_sir-madam_bakers-dozen-wooden-spoons_family_rocky-luten_009.jpg" alt="Notebook" style="width:100%;;height:320px;">
+
+    <div class="container">
+
+<div class="row ">
+<div class="col-md  content-wrapper">
+
+    <h1 class="jumbotron-title display-1"><h2 style="color:#E4B34C;font-weight:bold;"> Carve The spoon: Tips and Tricks </h2></h1><h4 class="jumbotron-subtitle">
+
+</h4></div></div><div class="overlay"></div></div><div class="jumbotron-overlay"></div></section>
+
+<div class"border">
+        <div style="text-align:center">
+
+       <pre class='inline' style="font-weight:bold"> Carving woods has been a tradition established inscandinavia, where carvers crafted spoons for the following use:
+           home, seasonal income, gifts, etc...</pre>
+       <pre class='inline' style="font-weight:bold"> Curretly the techniques, designs and embellishmenrs commonly used today are deeply embedded in centuaies of cultural history
+            but spoon carving is also a vibrant and growing craft tradition globally. </pre>
+            <p> --------------------------------------------------------</p>
+            <!-- history section  -->
+            <h3 style="color:#E4B34C;font-weight:bold;font-Size:23px" id="History"> History </h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQXoad20r2J_AcwLDIKuMUClv2tHZKHkTmjEyx2_QgvZtIsemgS" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+           <pre>       The word spoon derives from an ancient word meaning a chip of wood or horn carved from a larger piece. </pre>
+           <pre>       Wooden spoons were easy to carve and thus inexpensive, making them common throughout history. </pre>
+            <pre>      The Iron Age Celts (C. 250BC) of Britain used them. This is evidenced by an example of a small ladle</pre>
+            <pre>      discovered during archaeological excavations at the Glastonbury Lake Village. Roman period spoons have</pre>
+            <pre>      been recovered from excavations in the City of London. The Anglo Saxons were great workers of wood, as</pre>
+            <pre>      were the Vikings, and both these groups of settlers to the British Isles produced wooden spoons for domestic uses..</pre>
+            <!-- uses section  -->
+            <h4  style="color:#E4B34C;font-weight:bold;font-Size:23px" id="Uses"> Uses </h4>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR30LbonOdkOxKYwvaMJUUpsTmzGSZnO9uBxAxrl6yHZrFoQqRc" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre >Today, wooden spoons in western cultures are generally medium to large spoons used for mixing ingredients for cooking or baking.
+                <br>    They may be flat or have a small dip in the middle. Before electric mixers became common, wooden spoons were often used to cream together butter
+                <br>    and sugar in recipes such as shortbread or Victoria sponge cake. They are still used for stirring many different kinds of food and beverages,
+                <br>    especially soups and casseroles during preparation, although they tend to absorb strong smells such as onion and garlic.  Wooden spoons are generally
+                <br>    preferred for cooking because of their versatility. Some cooks prefer to use wooden spoons  when preparing risotto because they do not transfer
+                <br>    heat as much as metal spoons. Unlike metal spoons, they can also be  safely used without scratching non-stick pans     This is useful when making dishes
+                <br>    such as scrambled eggs.
+
+                <br>  Non-wooden spoons (metal spoons especially) are far more likely to scratch up the bottoms and sides of the pots and pans, and it also makes stirring easier and
+                <br>  more effective­–and without any fear which is why people, tend to carve and use wooden spoons. Firstly, Wooden spoons give you a firm strong handle to hold
+                <br>  of the handle breaking When introduced to high temperatures, metal spoons can get really hot.   while, Plastic spoons can begin to melt. den spoons don’t conduct heat
+                <br>  so you can stir until your heart’s content without fear of the handle heating up. </pre>
+                <!-- learn how to section  -->
+                       <h4  style="color:#E4B34C;font-weight:bold;font-Size:23px" id="Learn">Learn </h4>
+
+               <h6  style="color:black;font-weight:bold;font-Size:17px"> Step 1 – Carving Tools   </h6>
+
+               <img src=" https://cdn.instructables.com/F3B/Q2GP/HMMF1VET/F3BQ2GPHMMF1VET.LARGE.jpg?auto=webp&fit=bounds" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+               <pre>   The first thing you will need to do is gather your carving tools and make sure they are as <b>sharp</b> as you can get them. Sharp tools are the most important aspect
+                <br>   of any type of carving. They allow you to retain your sanity, create clean cuts and stay safe.You may be wondering how a sharp knife is safer than a dull one.
+                <br>   The answer to that question is quite simple: <b> Dull Knives are Unpredictable </b>. Imagine if you were using a dull blade and putting full force into a cut when suddenly
+                <br>   the wood splits. The knife will go shooting forward into whatever is in front of it, be it your femoral artery</pre>
+                <!-- <b> </b> -->
+                <h6  style="color:black;font-weight:bold;font-Size:17px"> Step 2 – Wood  </h6>
+
+                <img src="https://greenspreedotca.files.wordpress.com/2013/07/1008887_10152886792790109_1031978754_o.jpg" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre>    The second step of this process is to find yourself a tree and harvest one of its branches. There are many different types of woods that you can use for spoon making
+                <br>     for now there is only one thing you need to pay attention to. This is that the wood your using doesn’t have a <b>pith</b>. A pith is a soft spongy interior of some softer woods
+                <br>     that is not good for carving</pre>
+
+                <h6  style="color:black;font-weight:bold;font-Size:17px" > Step 3 – Spoon Blank </h6>
+                <img src="https://i.etsystatic.com/18024444/r/il/856e2e/2015903232/il_570xN.2015903232_jtnq.jpg" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre>    For this step get your hatchet and a mallet or thick stick. Set your branch upright on its sawed of end and place the blade your hatchet directly on the center of the branch.
+                <br>     Holding the hatchet in one hand get your mallet/thick stick in the other and start pounding the hatchet into your branch. After a couple hits it should split.
+                </pre>
+                <h6  style="color:black;font-weight:bold;font-Size:17px"> Step 4 – The Bowl </h6>
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOGd9rlslzEfnAlT8ox1BFZl0QD2OnrCs92FZISmsD5wSgvGO8" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre>   before carving out the bowl you need to make sure that the place you are carving into is smooth. It will be much harder to smooth the area out later while retaining a flat profile
+                <br>    for the top of your spoon. To do this you can use your knife and just take long even strokes until the surface becomes uniform.
+                <br> so, Place the hook knife on the wood at a pretty severe angle, and then Scoop down and out while watching for your thumb.
+                </pre>
+                <h6  style="color:black;font-weight:bold;font-Size:17px"> Step 5 –  Shaping the Bowl </h6>
+
+                <img src="https://spooncarverheaven.com/wp-content/uploads/2018/08/IMG_4219-768x512.jpg" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre>   With the bowl of your spoon carved it is time to move around the the back.<b>Carving the bowl first </b> will make it easier to come around and get its sides as there is less wood to deal with.
+                <br>    So pull out your knife, flip your blank around and get carving.</pre>
+                <h6  style="color:black;font-weight:bold;font-Size:17px" > Step 6 –  The Handle  </h6>
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/21/14/spoon-carving-4.jpg?w968h681" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+                <pre>The next step of this spoon carving process is to work on the handle. This is when you can relax a bit and start taking off big chunks of wood. Make sure you are still carving with the grain.</pre>
+                <h6  style="color:black;font-weight:bold;font-Size:17px"> Step 7 –  Smoothing Out Your Spoon </h6>
+                <img src="https://cdn.instructables.com/FO5/LJMK/H0OIV5F4/FO5LJMKH0OIV5F4.LARGE.jpg?auto=webp&frame=1&width=1024&height=1024&fit=bounds" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+
+                <pre>focus on the little ridges and deformities of your spoon and try to smooth it out with your knife, doing really fine carving</pre>
+                <h6  style="color:black;font-weight:bold;font-Size:17px" > Step 8 –  Applying Finish </h6>
+                <img src="https://i.pinimg.com/originals/a7/c3/eb/a7c3eb591e918439e77a5f4e1ef05ec9.jpg" alt="spoons" class="img-responsive" style="width:320px;height:220px;border:0;">
+
+                <pre> To finish spoons yoou should coat them with hot olive oil and baking them in the oven. </pre>
+
+           <!-- Tools section -->
+            <h4  style="color:#E4B34C;font-weight:bold;font-Size:23px" id="Tools"> Tools </h4>
+            <!-- four images in one row  -->
+          <div class="container">
+              <div class="row">
+                  <div class="column text-center">
+    <h6  style="color:black;font-weight:bold;font-Size:19px" > Knife </h6>
+
+    <img src="https://beavercrafttools.com/wp-content/uploads/2019/02/category_knives_light.jpg" alt="knife" class="img-responsive" style="width:320;height:220;border:0;">
+
+    </a>
+          </div>
+          <div class="column text-center">
+              <h6  style="color:black;font-weight:bold;font-Size:19px" > Hook Knife </h6>
+
+     <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSEoljhskfHaOFNrwRVg_OD_PF-1KgBX5JlZYyl-kWjJKEzo37a" alt="Hook knife" class="center"style="width:320;height:220;border:0">
+
+     </a>
+
+          </div>
+          <div class="column text-center">
+              <h6  style="color:black;font-weight:bold;font-Size:19px" > Saw </h6>
+
+              <img  src="https://previews.123rf.com/images/donatas1205/donatas12051111/donatas1205111100028/11143240-hand-saw-for-wood-work-.jpg" alt="Saw" class="right" style="width:320;height:220;border:0">
+
+              </a>
+          </div>
+          <div class="column text-center">
+              <h6  style="color:black;font-weight:bold;font-Size:19px" > Hatchet </h6>
+
+              <img  src="https://www.canadianoutdoorequipment.com/images/P/Wood-Craft-Camp-Carver-Axe-16.jpg" alt="Hatchet" class="right" style="width:320;height:220;border:0">
+
+              </a>
+          </div>
+          </div>
+      </div>
+
+</div>
+  </div>
+  <br>
+  <img src ="https://4.bp.blogspot.com/-ZcV2koCI-Xw/WQZnN9jRPmI/AAAAAAAALlM/_DVx_WpOTVQcorKZ5csn4qs5OIhy80uQACEw/s1600/yellow%2Bdots.png" alt="Notebook" style="width:100%;;height:15px;">
+<!-- footer of the page  -->
+<footer>
+    <div class="footerinner">
+        <div class="footercontents">
+            <pre>Terms and Conditions | Privacy Notice  | Cookie Policy | Slavery Act</pre>
+            <pre class="recaptcha-info">
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service
+            </pre>
+            <pre>
+                &copy; Copyright Kicthen Horsework
+            </pre>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
